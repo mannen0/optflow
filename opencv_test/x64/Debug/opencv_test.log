@@ -1,0 +1,33 @@
+﻿2017/07/05 18:25:43 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\mannen\Documents\projects\opencv_test\opencv_test\opencv_test.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Debug\opencv_test.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /wd4819 /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\opencv_test.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /wd4819 /errorReport:prompt opencv_test.cpp
+         opencv_test.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\mannen\Documents\projects\opencv_test\x64\Debug\opencv_test.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\mannen\Documents\projects\opencv_test\x64\Debug\opencv_test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\mannen\Documents\projects\opencv_test\x64\Debug\opencv_test.lib" /MACHINE:X64 x64\Debug\opencv_test.obj
+         x64\Debug\stdafx.obj
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "void __cdecl cv::fastFree(void *)" (?fastFree@cv@@YAXPEAX@Z) が関数 "public: __cdecl cv::Mat::~Mat(void)" (??1Mat@cv@@QEAA@XZ) で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "private: char * __cdecl cv::String::allocate(unsigned __int64)" (?allocate@String@cv@@AEAAPEAD_K@Z) が関数 "public: __cdecl cv::String::String(char const *)" (??0String@cv@@QEAA@PEBD@Z) で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "private: void __cdecl cv::String::deallocate(void)" (?deallocate@String@cv@@AEAAXXZ) が関数 "public: __cdecl cv::String::~String(void)" (??1String@cv@@QEAA@XZ) で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "void __cdecl cv::error(int,class cv::String const &,char const *,char const *,int)" (?error@cv@@YAXHAEBVString@1@PEBD1H@Z) が関数 "public: class cv::Size_<int> __cdecl cv::MatSize::operator()(void)const " (??RMatSize@cv@@QEBA?AV?$Size_@H@1@XZ) で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "class cv::_InputOutputArray const & __cdecl cv::noArray(void)" (?noArray@cv@@YAAEBV_InputOutputArray@1@XZ) が関数 wmain で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "public: static class cv::MatExpr __cdecl cv::Mat::ones(class cv::Size_<int>,int)" (?ones@Mat@cv@@SA?AVMatExpr@2@V?$Size_@H@2@H@Z) が関数 wmain で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "public: void __cdecl cv::Mat::deallocate(void)" (?deallocate@Mat@cv@@QEAAXXZ) が関数 "public: void __cdecl cv::Mat::release(void)" (?release@Mat@cv@@QEAAXXZ) で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "public: void __cdecl cv::Mat::copySize(class cv::Mat const &)" (?copySize@Mat@cv@@QEAAXAEBV12@@Z) が関数 "public: class cv::Mat & __cdecl cv::Mat::operator=(class cv::Mat const &)" (??4Mat@cv@@QEAAAEAV01@AEBV01@@Z) で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "void __cdecl cv::normalize(class cv::_InputArray const &,class cv::_InputOutputArray const &,double,double,int,int,class cv::_InputArray const &)" (?normalize@cv@@YAXAEBV_InputArray@1@AEBV_InputOutputArray@1@NNHH0@Z) が関数 wmain で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "void __cdecl cv::merge(class cv::Mat const *,unsigned __int64,class cv::_OutputArray const &)" (?merge@cv@@YAXPEBVMat@1@_KAEBV_OutputArray@1@@Z) が関数 wmain で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "void __cdecl cv::cartToPolar(class cv::_InputArray const &,class cv::_InputArray const &,class cv::_OutputArray const &,class cv::_OutputArray const &,bool)" (?cartToPolar@cv@@YAXAEBV_InputArray@1@0AEBV_OutputArray@1@1_N@Z) が関数 wmain で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "public: __cdecl cv::VideoCapture::VideoCapture(class cv::String const &)" (??0VideoCapture@cv@@QEAA@AEBVString@1@@Z) が関数 wmain で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "public: virtual __cdecl cv::VideoCapture::~VideoCapture(void)" (??1VideoCapture@cv@@UEAA@XZ) が関数 wmain で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "int __cdecl cv::waitKey(int)" (?waitKey@cv@@YAHH@Z) が関数 wmain で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "void __cdecl cv::imshow(class cv::String const &,class cv::_InputArray const &)" (?imshow@cv@@YAXAEBVString@1@AEBV_InputArray@1@@Z) が関数 wmain で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "void __cdecl cv::cvtColor(class cv::_InputArray const &,class cv::_OutputArray const &,int,int)" (?cvtColor@cv@@YAXAEBV_InputArray@1@AEBV_OutputArray@1@HH@Z) が関数 wmain で参照されました。
+     1>opencv_test.obj : error LNK2019: 未解決の外部シンボル "struct cv::Ptr<class cv::superres::DualTVL1OpticalFlow> __cdecl cv::superres::createOptFlow_DualTVL1(void)" (?createOptFlow_DualTVL1@superres@cv@@YA?AU?$Ptr@VDualTVL1OpticalFlow@superres@cv@@@2@XZ) が関数 wmain で参照されました。
+     1>C:\Users\mannen\Documents\projects\opencv_test\x64\Debug\opencv_test.exe : fatal error LNK1120: 17 件の未解決の外部参照
+     1>プロジェクト "C:\Users\mannen\Documents\projects\opencv_test\opencv_test\opencv_test.vcxproj" (Build ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:03.68
